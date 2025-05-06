@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>团队成员 - [实验室名称] - [大学/机构名称]</title>
+    <title>团队成员 - 密码技术与数据安全研究中心 - 南京理工大学</title>
     <style>
         /* 全局样式 */
         :root {
@@ -45,7 +46,7 @@
             position: sticky;
             top: 0;
             z-index: 100;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
         nav {
@@ -84,7 +85,7 @@
 
         /* 页面标题区域 */
         .page-header {
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('team-banner.jpg');
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('team-banner.jpg');
             background-size: cover;
             background-position: center;
             height: 40vh;
@@ -158,34 +159,47 @@
             transition: all 0.3s;
         }
 
-        .category-btn.active, .category-btn:hover {
+        .category-btn.active,
+        .category-btn:hover {
             background: var(--secondary-color);
             color: white;
         }
 
         .team-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
             gap: 2rem;
         }
+        
 
         .member-card {
             background: white;
             border-radius: 8px;
             overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s;
         }
 
         .member-card:hover {
             transform: translateY(-5px);
         }
+        
 
         .member-image {
             width: 100%;
-            height: 300px;
+            height: 260px;
             object-fit: cover;
+            object-position: top;
         }
+        /* .member-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 1rem;
+            display: block;
+            border: 5px solid var(--light-color);
+        } */
 
         .member-info {
             padding: 1.5rem;
@@ -252,7 +266,7 @@
             padding: 1rem;
             border-radius: 8px;
             text-align: center;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
         }
 
         .alumni-image {
@@ -315,7 +329,7 @@
 
         .copyright {
             padding-top: 1rem;
-            border-top: 1px solid rgba(255,255,255,0.1);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
         }
 
         /* 响应式设计 */
@@ -353,12 +367,13 @@
         }
     </style>
 </head>
+
 <body>
     <!-- 导航栏 -->
     <header>
         <div class="container">
             <nav>
-                <div class="logo">[实验室名称]</div>
+                <div class="logo">密码技术与数据安全研究中心</div>
                 <div class="menu-toggle">☰</div>
                 <ul class="nav-links">
                     <li><a href="index.html">首页</a></li>
@@ -389,21 +404,118 @@
     <section class="section">
         <div class="container">
             <h2 class="section-title">现任成员</h2>
-            
+
             <div class="team-categories">
                 <div class="category-btn active" data-category="all">全部</div>
-                <div class="category-btn" data-category="faculty">教师</div>
-                <div class="category-btn" data-category="postdoc">博士后</div>
+                <div class="category-btn" data-category="faculty">导师</div>
+                <!-- <div class="category-btn" data-category="postdoc">博士后</div> -->
                 <div class="category-btn" data-category="phd">博士生</div>
                 <div class="category-btn" data-category="master">硕士生</div>
             </div>
-            
+
             <div class="team-grid">
-                <!-- 教师1 -->
+
+                <!-- 导师1 -->
+                <div class="member-card" data-category="faculty">
+                    <a href="https://gsmis.njust.edu.cn/open/TutorInfo.aspx?dsbh=hRciDdlz6NwifkCLT3tL2w==&yxsh=VPIfiCKNxmw=&zydm=KOa4tmKZCW4=" target="_blank" class="member-card-link">                       
+                        <img src="img/zyb.jpg" alt="周永彬" class="member-image">
+                        <div class="member-info">
+                            <h3 class="member-name">周永彬</h3>
+                            <p class="member-position">教授</p>
+                            <p class="member-expertise">
+                                主要研究领域：密码学与密码工程、后量子密码学、硬件(系统)安全、物联网与智能(与AI)系统安全、密态数据计算、(大)数据安全与隐私保护、网络系统安全、区块链技术等；</p>
+                            <!-- <p class="member-bio">[教授简介] 例如: XX大学博士，曾任职于XX机构，发表论文XX篇，获得XX奖项。</p> -->
+                            <!-- <div class="member-links">
+                                <a href="#"><i class="fas fa-envelope"></i></a>
+                                <a href="#"><i class="fas fa-globe"></i></a>
+                                <a href="#"><i class="fab fa-google-scholar"></i></a>
+                            </div> -->
+                        </div>
+                    </a>
+                </div>
+
+
+                <!-- 导师2 -->
+                <div class="member-card" data-category="faculty">
+                    <a href="https://gsmis.njust.edu.cn/open/TutorInfo.aspx?dsbh=B1a1MC40kUMO6upxtNkEZQ==&yxsh=VPIfiCKNxmw=&zydm=KOa4tmKZCW4=" target="_blank" class="member-card-link">                       
+                        <img src="img/gyw.jpg" alt="高宜文" class="member-image">
+                        <div class="member-info">
+                            <h3 class="member-name">高宜文</h3>
+                            <p class="member-position">副教授</p>
+                            <p class="member-expertise">
+                                主要研究领域：密码工程、后量子密码技术、微架构安全、人工智能与安全；</p>
+                            <!-- <p class="member-bio">[教授简介] 例如: XX大学博士，曾任职于XX机构，发表论文XX篇，获得XX奖项。</p> -->
+                            <!-- <div class="member-links">
+                                <a href="#"><i class="fas fa-envelope"></i></a>
+                                <a href="#"><i class="fas fa-globe"></i></a>
+                                <a href="#"><i class="fab fa-google-scholar"></i></a>
+                            </div> -->
+                        </div>
+                    </a>
+                </div>
+
+                <!-- 导师3 -->
+                <div class="member-card" data-category="faculty">
+                    <a href="https://gsmis.njust.edu.cn/open/TutorInfo.aspx?dsbh=L3WMpQviVMWE9tQ0zFwSjw==&yxsh=VPIfiCKNxmw=&zydm=KOa4tmKZCW4=" target="_blank" class="member-card-link">                       
+                        <img src="img/lyj.jpg" alt="刘月君" class="member-image">
+                        <div class="member-info">
+                            <h3 class="member-name">刘月君</h3>
+                            <p class="member-position">副教授</p>
+                            <p class="member-expertise">
+                                主要研究领域：后量子密码学、密码工程、数据安全与隐私计算等；</p>
+                            <!-- <p class="member-bio">[教授简介] 例如: XX大学博士，曾任职于XX机构，发表论文XX篇，获得XX奖项。</p> -->
+                            <!-- <div class="member-links">
+                                <a href="#"><i class="fas fa-envelope"></i></a>
+                                <a href="#"><i class="fas fa-globe"></i></a>
+                                <a href="#"><i class="fab fa-google-scholar"></i></a>
+                            </div> -->
+                        </div>
+                    </a>
+                </div>
+
+                <!-- 导师3 -->
+                <div class="member-card" data-category="faculty">
+                    <a href="https://teacher.njust.edu.cn/wlkjaq/wjb/list.htm" target="_blank" class="member-card-link">                       
+                        <img src="img/wjb.png" alt="王加贝" class="member-image">
+                        <div class="member-info">
+                            <h3 class="member-name">王加贝</h3>
+                            <p class="member-position">副教授</p>
+                            <p class="member-expertise">
+                                主要研究领域：数据安全与隐私保护、应用密码学、隐私计算等；</p>
+                            <!-- <p class="member-bio">[教授简介] 例如: XX大学博士，曾任职于XX机构，发表论文XX篇，获得XX奖项。</p> -->
+                            <!-- <div class="member-links">
+                                <a href="#"><i class="fas fa-envelope"></i></a>
+                                <a href="#"><i class="fas fa-globe"></i></a>
+                                <a href="#"><i class="fab fa-google-scholar"></i></a>
+                            </div> -->
+                        </div>
+                    </a>
+                </div>
+
+                <!-- 导师3 -->
+                <div class="member-card" data-category="faculty">
+                    <a href="https://teacher.njust.edu.cn/wlkjaq/ly/list.htm" target="_blank" class="member-card-link">                       
+                        <img src="img/ly.jpg" alt="刘媛" class="member-image">
+                        <div class="member-info">
+                            <h3 class="member-name">刘媛</h3>
+                            <p class="member-position">讲师</p>
+                            <p class="member-expertise">
+                                主要研究领域：后量子密码学、数据安全与隐私保护、区块链技术等；</p>
+                            <!-- <p class="member-bio">[教授简介] 例如: XX大学博士，曾任职于XX机构，发表论文XX篇，获得XX奖项。</p> -->
+                            <!-- <div class="member-links">
+                                <a href="#"><i class="fas fa-envelope"></i></a>
+                                <a href="#"><i class="fas fa-globe"></i></a>
+                                <a href="#"><i class="fab fa-google-scholar"></i></a>
+                            </div> -->
+                        </div>
+                    </a>
+                </div>
+
+                <!-- 导师6 -->
                 <div class="member-card" data-category="faculty">
                     <img src="pi-photo.jpg" alt="PI照片" class="member-image">
                     <div class="member-info">
-                        <h3 class="member-name">[PI姓名]</h3>
+                        <h3 class="member-name">明经典</h3>
                         <p class="member-position">教授/首席研究员</p>
                         <p class="member-expertise">研究专长: [研究方向]</p>
                         <p class="member-bio">[教授简介] 例如: XX大学博士，曾任职于XX机构，发表论文XX篇，获得XX奖项。</p>
@@ -414,9 +526,9 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- 博士后1 -->
-                <div class="member-card" data-category="postdoc">
+                <!-- <div class="member-card" data-category="postdoc">
                     <img src="postdoc1-photo.jpg" alt="博士后照片" class="member-image">
                     <div class="member-info">
                         <h3 class="member-name">[博士后姓名]</h3>
@@ -428,8 +540,8 @@
                             <a href="#"><i class="fas fa-globe"></i></a>
                         </div>
                     </div>
-                </div>
-                
+                </div> -->
+
                 <!-- 博士生1 -->
                 <div class="member-card" data-category="phd">
                     <img src="phd1-photo.jpg" alt="博士生照片" class="member-image">
@@ -443,7 +555,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- 博士生2 -->
                 <div class="member-card" data-category="phd">
                     <img src="phd2-photo.jpg" alt="博士生照片" class="member-image">
@@ -457,7 +569,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- 硕士生1 -->
                 <div class="member-card" data-category="master">
                     <img src="master1-photo.jpg" alt="硕士生照片" class="member-image">
@@ -471,7 +583,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- 硕士生2 -->
                 <div class="member-card" data-category="master">
                     <img src="master2-photo.jpg" alt="硕士生照片" class="member-image">
@@ -493,7 +605,7 @@
     <section class="alumni-section">
         <div class="container">
             <h2 class="section-title">实验室校友</h2>
-            
+
             <div class="alumni-grid">
                 <!-- 校友1 -->
                 <div class="alumni-card">
@@ -502,7 +614,7 @@
                     <p class="alumni-position">[现任职位]</p>
                     <p class="alumni-year">[毕业年份]</p>
                 </div>
-                
+
                 <!-- 校友2 -->
                 <div class="alumni-card">
                     <img src="alumni2-photo.jpg" alt="校友照片" class="alumni-image">
@@ -510,7 +622,7 @@
                     <p class="alumni-position">[现任职位]</p>
                     <p class="alumni-year">[毕业年份]</p>
                 </div>
-                
+
                 <!-- 校友3 -->
                 <div class="alumni-card">
                     <img src="alumni3-photo.jpg" alt="校友照片" class="alumni-image">
@@ -518,7 +630,7 @@
                     <p class="alumni-position">[现任职位]</p>
                     <p class="alumni-year">[毕业年份]</p>
                 </div>
-                
+
                 <!-- 校友4 -->
                 <div class="alumni-card">
                     <img src="alumni4-photo.jpg" alt="校友照片" class="alumni-image">
@@ -526,7 +638,7 @@
                     <p class="alumni-position">[现任职位]</p>
                     <p class="alumni-year">[毕业年份]</p>
                 </div>
-                
+
                 <!-- 校友5 -->
                 <div class="alumni-card">
                     <img src="alumni5-photo.jpg" alt="校友照片" class="alumni-image">
@@ -534,7 +646,7 @@
                     <p class="alumni-position">[现任职位]</p>
                     <p class="alumni-year">[毕业年份]</p>
                 </div>
-                
+
                 <!-- 校友6 -->
                 <div class="alumni-card">
                     <img src="alumni6-photo.jpg" alt="校友照片" class="alumni-image">
@@ -569,30 +681,30 @@
                 <div class="footer-section">
                     <h3>联系</h3>
                     <ul>
-                        <li>邮箱: lab@university.edu</li>
+                        <li>邮箱: CODE@njust.edu.cn</li>
                         <li>电话: [实验室电话]</li>
-                        <li>地址: [简要地址]</li>
+                        <li>地址: 江苏省江阴市福星路8号</li>
                     </ul>
                 </div>
             </div>
             <div class="copyright">
-                <p>&copy; 2024 [实验室名称]. 保留所有权利.</p>
+                <p>&copy; 2024 密码技术与数据安全研究中心. 保留所有权利.</p>
             </div>
         </div>
     </footer>
 
     <!-- Font Awesome 图标库 -->
     <script src="https://kit.fontawesome.com/your-code.js" crossorigin="anonymous"></script>
-    
+
     <script>
         // 移动端菜单切换
-        document.querySelector('.menu-toggle').addEventListener('click', function() {
+        document.querySelector('.menu-toggle').addEventListener('click', function () {
             document.querySelector('.nav-links').classList.toggle('active');
         });
 
         // 平滑滚动
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
+            anchor.addEventListener('click', function (e) {
                 e.preventDefault();
 
                 document.querySelector(this.getAttribute('href')).scrollIntoView({
@@ -607,7 +719,7 @@
         });
 
         // 滚动时导航栏效果
-        window.addEventListener('scroll', function() {
+        window.addEventListener('scroll', function () {
             const header = document.querySelector('header');
             if (window.scrollY > 50) {
                 header.style.background = 'rgba(44, 62, 80, 0.95)';
@@ -623,13 +735,13 @@
         const memberCards = document.querySelectorAll('.member-card');
 
         categoryBtns.forEach(btn => {
-            btn.addEventListener('click', function() {
+            btn.addEventListener('click', function () {
                 // 更新活动按钮状态
                 categoryBtns.forEach(b => b.classList.remove('active'));
                 this.classList.add('active');
-                
+
                 const category = this.dataset.category;
-                
+
                 // 筛选成员卡片
                 memberCards.forEach(card => {
                     if (category === 'all' || card.dataset.category === category) {
@@ -642,4 +754,5 @@
         });
     </script>
 </body>
+
 </html>
